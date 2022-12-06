@@ -68,13 +68,19 @@ body {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
-
 .header-container {
   display: flex;
   align-items: center;
 }
+.header-nav-container {
+  display: flex;
+  align-items: center;
+}
 
-.nav-logo {
+.logo {
+  margin-right: 93px;
+}
+.logo-nav {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -90,21 +96,11 @@ body {
   color: var(--brand-color);
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  margin-right: 93px;
-}
-
 .nav-list {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-
 .nav-list-item {
   position: relative;
   padding-top: 32px;
@@ -118,7 +114,13 @@ body {
   color: var(--nav-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.nav-list-item:hover, .nav-list-item:focus {
+  color: var(--brand-color);
+}
 
+.current {
+  color: var(--brand-color);
+}
 .current::after {
   content: "";
   position: absolute;
@@ -133,22 +135,15 @@ body {
   border-radius: 2px;
 }
 
-.current {
-  color: var(--brand-color);
-}
-
-.nav-list-item:hover,
-.nav-list-item:focus {
-  color: var(--brand-color);
-}
-
 .adress {
   display: flex;
   align-items: center;
   margin-left: auto;
   gap: 50px;
 }
-
+.adress-list {
+  color: var(--brand-color);
+}
 .adress-link {
   display: flex;
   align-items: center;
@@ -160,13 +155,7 @@ body {
   color: var(--link-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.adress-list {
-  color: var(--brand-color);
-}
-
-.adress-link:hover,
-.adress-link:focus {
+.adress-link:hover, .adress-link:focus {
   color: var(--brand-color);
 }
 
@@ -420,7 +409,6 @@ body {
   background-position: center;
   background-size: cover;
 }
-
 .hero-title {
   width: 696px;
   margin-bottom: 30px;
@@ -435,7 +423,6 @@ body {
   text-transform: uppercase;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .hero-btn {
   display: block;
   margin-right: auto;
@@ -455,24 +442,20 @@ body {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover, .hero-btn:focus {
   background-color: #188ce8;
 }
 
 .properties {
   background-color: #ffffff;
 }
-
 .properties-list {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 30px;
 }
-
-.propert-list-item {
+.properties-list-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -481,7 +464,6 @@ body {
   height: 120px;
   margin-bottom: 30px;
 }
-
 .properties-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -492,13 +474,11 @@ body {
 .gallery {
   padding-top: 0px;
 }
-
 .gallery-list {
   display: flex;
   gap: 30px;
   justify-content: space-between;
 }
-
 .gallery-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -507,11 +487,9 @@ body {
   text-align: center;
   color: var(--title-color);
 }
-
 .gallery-thumb {
   position: relative;
 }
-
 .gallery-img-title {
   position: absolute;
   bottom: 0;
@@ -535,11 +513,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 .command-section {
   background-color: #f5f4fa;
 }
-
 .command-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -548,8 +524,7 @@ body {
   text-align: center;
   color: var(--title-color);
 }
-
-.title-name {
+.command-title-name {
   margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
@@ -557,7 +532,6 @@ body {
   text-align: center;
   color: var(--title-color);
 }
-
 .command-list {
   margin-right: 30px;
   padding-bottom: 30px;
@@ -566,7 +540,6 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .command-list:last-child {
   margin-right: 0;
 }
@@ -598,21 +571,17 @@ body {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.soc-link-item:hover, .soc-link-item:focus {
+  background-color: var(--brand-color);
+}
 
 .soc-link-icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.soc-link-item:hover,
-.soc-link-item:focus {
-  background-color: var(--brand-color);
-}
-
 .soc-link-item:hover .soc-link-icon {
   fill: #ffffff;
 }
-
 .soc-link-item:focus .soc-link-icon {
   fill: #ffffff;
 }
@@ -630,7 +599,7 @@ body {
   margin-bottom: 50px;
 }
 
-.customer-list {
+.customers-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -670,11 +639,8 @@ body {
   height: 100%;
   justify-content: center;
   align-items: center;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customers-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list {
