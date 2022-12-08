@@ -14,10 +14,7 @@
         margin-bottom: 20px;
         font-family: 'Raleway';
         font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.1923;
-        letter-spacing: 0.03em;
+        @include font (700, 26px, 1.1923)
         color: #ffffff;
         text-decoration: none;
         list-style: none;
@@ -40,8 +37,6 @@
 }
 
 .contacts-item {
-    line-height: 1.7142;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     text-decoration: none;
@@ -70,10 +65,7 @@
 }
 
 .soc-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    @include font (700, 14px, 1.1428)
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #ffffff;

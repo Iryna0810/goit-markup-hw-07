@@ -9,9 +9,7 @@
 
     &-title {
         margin-bottom: 50px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.1666;
+        @include font (700, 36px, 1.1666)
         text-align: center;
         color: var(--title-color);
     }

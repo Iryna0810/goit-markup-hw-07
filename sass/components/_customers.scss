@@ -2,9 +2,7 @@
     background-color: #ffffff;
 
     &__title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.1666;
+@include font (700,36px,1.1666)
         text-align: center;
         color: var(--title-color);
         margin-bottom: 50px;

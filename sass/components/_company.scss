@@ -5,18 +5,14 @@
         background-color: #f5f4fa;
     }
     &-title {
+        @include font (700, 36px, 1.1666)
         margin-bottom: 50px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.1666;
         text-align: center;
         color: var(--title-color);
     }
     &-title-name {
         margin-top: 30px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.1875;
+        @include font (500,16px,1.1875)
         text-align: center;
         color: var(--title-color);
     }
@@ -35,8 +31,9 @@
 }
 .position {
     margin-top: 10px;
-    font-size: 16px;
-    line-height: 19px;
+    @include font (null, 16px, 1.1875)
+    // font-size: 16px;
+    // line-height: 19px;
     text-align: center;
 }
 .designer-soc-list {
