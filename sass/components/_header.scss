@@ -19,9 +19,7 @@
     &-nav {
         font-family: 'Raleway';
         font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.1923;
+        @include font (700, 26px, 1.1923);
         letter-spacing: 0.03em;
         color: #000000;
         text-decoration: none;
@@ -43,8 +41,7 @@
         padding-top: 32px;
         padding-bottom: 32px;
         display: flex;
-        font-weight: 500;
-        line-height: 1.3333;
+        @include font (500, null, 1.3333);
         letter-spacing: 0.02em;
         text-decoration: none;
         list-style: none;
@@ -86,8 +83,7 @@
     &-link {
         display: flex;
         align-items: center;
-        font-weight: 500;
-        line-height: 1.1428;
+        @include font (500, null, 1.1428);
         letter-spacing: 0.02em;
         text-decoration: none;
         list-style: none;
